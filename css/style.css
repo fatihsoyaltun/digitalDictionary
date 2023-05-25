@@ -1,3 +1,23 @@
 html body {
   font-family: "Poppins", sans-serif;
+}
+
+.main-wrapper .navbar .navbar-toggler {
+  padding: 0.5rem;
+}
+.main-wrapper .navbar .navbar-brand {
+  margin-right: 0;
+}
+.main-wrapper .navbar .navbar-brand img {
+  width: 50px;
+}
+.main-wrapper .navbar form .form-control {
+  border-radius: 0.5rem;
+}
+.main-wrapper .navbar form .form-control:focus {
+  box-shadow: none;
+  border-color: #fff;
+}
+.main-wrapper .gedf-wrapper {
+  margin-top: 9rem;
 }/*# sourceMappingURL=style.css.map */

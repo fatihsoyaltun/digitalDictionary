@@ -6,6 +6,12 @@ html body {
   font-family: "Poppins", sans-serif;
 }
 
+.main-wrapper {
+  background-color: #ECECEC;
+}
+.main-wrapper .navbar {
+  background-color: #13005A;
+}
 .main-wrapper .navbar .navbar-toggler {
   padding: 0.5rem;
 }
@@ -17,21 +23,92 @@ html body {
 }
 .main-wrapper .navbar form .form-control {
   border-radius: 0.5rem;
+  background-color: transparent;
 }
 .main-wrapper .navbar form .form-control:focus {
   box-shadow: none;
   border-color: #fff;
-}
-.main-wrapper .navbar .titlesHero .titlesHeroNav {
-  border-bottom: 1px solid red;
-}
-.main-wrapper .navbar .titlesHero .titlesHeroNav .nav-item {
-  text-decoration: underline;
   color: #fff;
 }
-.main-wrapper .navbar .titlesHero .titlesHeroNav .nav-item:hover {
-  border: 1px solid red;
+.main-wrapper .navbar form button {
+  color: #fff;
+}
+.main-wrapper .navbar form button:hover {
+  background-color: #1C82AD;
 }
 .main-wrapper .gedf-wrapper {
-  margin-top: 7.5rem;
+  padding-top: 4.5rem;
+}
+.main-wrapper .gedf-wrapper .titlesHero .titlesHeroNav .nav-item {
+  transition: all 0.5s ease-in-out;
+}
+.main-wrapper .gedf-wrapper .titlesHero .titlesHeroNav .nav-item:hover {
+  background: #1C82AD;
+}
+.main-wrapper .gedf-wrapper .titlesHero .titlesHeroNav .nav-item:hover .nav-link {
+  color: #fff !important;
+}
+.main-wrapper .gedf-wrapper .titlesHero .titlesHeroNav .nav-item .nav-link {
+  color: #000;
+}
+.main-wrapper .gedf-wrapper .list-group {
+  cursor: pointer;
+}
+.main-wrapper .gedf-wrapper .list-group .list-group-item {
+  background-color: #ECECEC;
+}
+.main-wrapper .gedf-wrapper .list-group .list-group-item:hover {
+  background-color: #E9E8E8;
+}
+.main-wrapper .gedf-wrapper .post .nav-tabs .nav-link {
+  color: #000;
+}
+.main-wrapper .gedf-wrapper .post .nav-tabs .nav-link.active {
+  background-color: #1C82AD;
+  color: #fff;
+}
+
+.log-reg {
+  background: #007bff;
+  background: linear-gradient(to right, #1C82AD, #03C988);
+  height: 100vh;
+}
+.log-reg .card-img-left {
+  width: 45%;
+  background: scroll center url("/img/grunge-paint-background.jpg");
+  background-size: cover;
+}
+.log-reg .btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+  background-color: #1C82AD;
+  color: #fff;
+  border-color: #1C82AD;
+}
+.log-reg .btn-google {
+  color: white;
+  background-color: #ea4335;
+  border-color: #ea4335;
+}
+.log-reg .btn-facebook {
+  color: white;
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+.log-reg form .form-control {
+  border-radius: 0.5rem;
+}
+.log-reg form .form-control:focus {
+  box-shadow: none;
+  border-color: #1C82AD;
+}
+.log-reg form .changeover {
+  color: #1A120B;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar form {
+    width: 100% !important;
+  }
 }/*# sourceMappingURL=style.css.map */

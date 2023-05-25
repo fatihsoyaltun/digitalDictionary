@@ -9,7 +9,9 @@ html
     body
         font-family: 'Poppins', sans-serif
 .main-wrapper
+    background-color: #ECECEC
     .navbar
+        background-color: #13005A
         .navbar-toggler
             padding: .5rem
         .navbar-brand
@@ -19,16 +21,81 @@ html
         form
             .form-control
                 border-radius: .5rem
+                background-color: transparent
                 &:focus
                     box-shadow: none
                     border-color: #fff
+                    color: #fff
+            button
+                color: #fff
+                &:hover
+                    background-color: #1C82AD
+    .gedf-wrapper
+        padding-top: 4.5rem
         .titlesHero
             .titlesHeroNav
-                border-bottom: 1px solid red
                 .nav-item
-                    text-decoration: underline
-                    color: #fff
+                    transition: all .5s ease-in-out
                     &:hover
-                        border: 1px solid red
-    .gedf-wrapper
-        margin-top: 7.5rem
+                        background: #1C82AD
+                    &:hover .nav-link
+                        color: #fff !important
+                    .nav-link
+                        color: #000
+        .list-group
+            cursor: pointer
+            .list-group-item
+                background-color: #ECECEC
+                &:hover
+                    background-color: #E9E8E8
+        .post
+            .nav-tabs
+                .nav-link
+                    color: #000
+                .nav-link.active
+                    background-color: #1C82AD
+                    color: #fff
+
+
+
+//* login-register css
+.log-reg
+    background: #007bff
+    background: linear-gradient(to right, #1C82AD, #03C988)
+    height: 100vh
+    .card-img-left
+        width: 45%
+        background: scroll center url('/img/grunge-paint-background.jpg')
+        background-size: cover
+    .btn-login
+        font-size: 0.9rem
+        letter-spacing: 0.05rem
+        padding: 0.75rem 1rem
+        background-color: #1C82AD
+        color: #fff
+        border-color: #1C82AD
+    .btn-google 
+        color: white
+        background-color: #ea4335
+        border-color: #ea4335
+    .btn-facebook
+        color: white
+        background-color: #3b5998
+        border-color: #3b5998
+    form
+        .form-control
+            border-radius: .5rem
+            &:focus
+                box-shadow: none
+                border-color: #1C82AD
+        .changeover
+            color: #1A120B
+
+
+
+
+//! responsive css
+@media screen and ( max-width: 576px )
+    .navbar
+        form
+            width: 100% !important

@@ -95,7 +95,8 @@
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <div class="card post">
+                        <!-- Post Add -->
+                        <div class="card postAdd">
                             <div class="card-header">
                                 <nav>
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -114,36 +115,54 @@
                                         aria-labelledby="nav-home-tab" tabindex="0">
                                         <textarea class="w-100 p-2" placeholder="Neler oluyor?" name="" id="" rows="3"
                                             cols="3" style="resize: none;"></textarea>
-                                        <input type="file">
+                                        <div class="uploadBox d-flex flex-column">
+                                            <input id="uploadBtn" type="file" accept="image/*">
+                                            <label for="uploadBtn"><i class="fa-solid fa-images"></i></label>
+                                        </div>
                                     </div>
                                     <div class="tab-pane fade" id="nav-profile" role="tabpanel"
                                         aria-labelledby="nav-profile-tab" tabindex="0">
                                         <textarea class="w-100 p-2" name="" id="" rows="3" cols="3"
                                             style="resize: none;"></textarea>
-                                        <input type="file">
                                     </div>
                                 </div>
                                 <div class="btn-toolbar justify-content-between mt-2">
                                     <div class="btn-group">
-                                        <button type="submit" class="btn btn-primary">Gönder</button>
+                                        <button type="submit" class="btn btn-primary btnPost">Gönder</button>
                                     </div>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn btn-primary dropdown-toggle"
                                             data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="fa fa-globe"></i>
+                                            <i class="fa fa-earth-americas"></i>
                                         </button>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#"><i class="fa fa-globe"></i>Public</a>
+                                            <li>
+                                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                                    <i class="fa fa-earth-americas"></i>
+                                                    <span>Herkes</span>
+                                                </a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#"><i class="fa fa-users"></i>Friends</a>
+                                            <li>
+                                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                                    <i class="fa fa-users"></i>
+                                                    <span>Arkadaşlar</span>
+                                                </a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i>Just me</a>
+                                            <li>
+                                                <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                                    <i class="fa fa-user"></i>
+                                                    <span>Sadece ben</span>
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Post Add -->
+                        <!-- Post -->
+                        
+                        <!-- Post -->
                     </div>
                 </div>
                 <div class="col-md-3"></div>

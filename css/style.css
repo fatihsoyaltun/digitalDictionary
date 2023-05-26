@@ -60,10 +60,54 @@ html body {
 .main-wrapper .gedf-wrapper .list-group .list-group-item:hover {
   background-color: #E9E8E8;
 }
-.main-wrapper .gedf-wrapper .post .nav-tabs .nav-link {
+.main-wrapper .gedf-wrapper .postAdd .nav-tabs .nav-link {
   color: #000;
 }
-.main-wrapper .gedf-wrapper .post .nav-tabs .nav-link.active {
+.main-wrapper .gedf-wrapper .postAdd .nav-tabs .nav-link.active {
+  background-color: #1C82AD;
+  color: #fff;
+}
+.main-wrapper .gedf-wrapper .postAdd .card-body .uploadBox {
+  width: 10%;
+}
+.main-wrapper .gedf-wrapper .postAdd .card-body .uploadBox input[type=file] {
+  display: none;
+}
+.main-wrapper .gedf-wrapper .postAdd .card-body .uploadBox label {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  background: #1C82AD;
+  letter-spacing: 1.5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+  transition: all 0.5s ease;
+}
+.main-wrapper .gedf-wrapper .postAdd .card-body .uploadBox label i {
+  font-size: 20px;
+  padding: 10px;
+}
+.main-wrapper .gedf-wrapper .postAdd .card-body .uploadBox label:active {
+  transform: scale(0.95);
+}
+.main-wrapper .gedf-wrapper .postAdd .card-body .btn-toolbar .btnPost {
+  background-color: #1C82AD;
+  border: none;
+  transition: all 0.5s ease;
+}
+.main-wrapper .gedf-wrapper .postAdd .card-body .btn-toolbar .btnPost:active {
+  transform: scale(0.9);
+}
+.main-wrapper .gedf-wrapper .postAdd .card-body .btn-toolbar .dropdown-toggle {
+  background-color: #1C82AD;
+  border: none;
+}
+.main-wrapper .gedf-wrapper .postAdd .card-body .btn-toolbar .dropdown-menu .dropdown-item:hover {
   background-color: #1C82AD;
   color: #fff;
 }

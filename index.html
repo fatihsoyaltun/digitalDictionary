@@ -54,8 +54,7 @@
         <section class="gedf-wrapper">
             <div class="container-fluid d-flex flex-wrap titlesHero py-1">
                 <ul class="nav m-auto titlesHeroNav">
-                    <li class="nav-item rounded mx-1"><a href="#" class="nav-link px-2 active"
-                            aria-current="page">Gündem</a></li>
+                    <li class="nav-item rounded mx-1"><a href="#" class="nav-link px-2 active" aria-current="page">Gündem</a></li>
                     <li class="nav-item rounded mx-1"><a href="#" class="nav-link px-2">Teknoloji</a></li>
                     <li class="nav-item rounded mx-1"><a href="#" class="nav-link px-2">Spor</a></li>
                     <li class="nav-item rounded mx-1"><a href="#" class="nav-link px-2">Ekonomi</a></li>
@@ -67,6 +66,18 @@
                     <li class="nav-item rounded mx-1"><a href="#" class="nav-link px-2">Edebiyat</a></li>
                     <li class="nav-item rounded mx-1"><a href="#" class="nav-link px-2">Eğitim</a></li>
                     <li class="nav-item rounded mx-1"><a href="#" class="nav-link px-2">Yazılım</a></li>
+                    <li class="nav-item rounded mx-1">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis align-self-center"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Konu</a></li>
+                                <li><a class="dropdown-item" href="#">Konu</a></li>
+                                <li><a class="dropdown-item" href="#">Konu</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="container-fluid">
@@ -76,22 +87,22 @@
                             <li class="list-group-item">
                                 <h1 class="text-center">Gündem</h1>
                             </li>
-                            <li class="list-group-item">25 mayıs 2023 7 milyon mültecinin oy kullanması</li>
-                            <li class="list-group-item">kk'nın babala yayını sonrası hissedilenler</li>
-                            <li class="list-group-item">türkiye'de artan yabancı düşmanlığı</li>
-                            <li class="list-group-item">esenyurt'ta otopark kavgasında işlenen cinayet</li>
-                            <li class="list-group-item">starbucks</li>
-                            <li class="list-group-item">10 haziran 2023 manchester city inter maçı</li>
-                            <li class="list-group-item">seçimi kaybetmenin hayatın sonu olmaması</li>
-                            <li class="list-group-item">aşkı anlatan gelmiş geçmiş en iyi replik</li>
-                            <li class="list-group-item">babala tv yayınındaki aktrollün ifşa edilmesi</li>
-                            <li class="list-group-item">sığınmacıların kapıkule sınır kapısına akın etmesi</li>
-                            <li class="list-group-item">kendine muhabir'in vicdanlı bir insanla röportajı</li>
-                            <li class="list-group-item">bir senede on üç milyon insanı sınır dışı etmek</li>
-                            <li class="list-group-item">hollandada yalnız bulunan depremzede çocuk</li>
-                            <li class="list-group-item">iş hayatında çalışmaktan tiksindiren şeyler</li>
-                            <li class="list-group-item">2008 yılına ait çok ilginç 2023 araştırması</li>
-                            <li class="list-group-item">almanya'da oy kullanmak için sıra bekleyen afgan</li>
+                            <li class="list-group-item"><a class="nav-link" href="#">25 mayıs 2023 7 milyon mültecinin oy kullanması</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">kk'nın babala yayını sonrası hissedilenler</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">türkiye'de artan yabancı düşmanlığı</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">türkiye'de artan yabancı düşmanlığı</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">starbucks</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">10 haziran 2023 manchester city inter maçı</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">seçimi kaybetmenin hayatın sonu olmaması</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">aşkı anlatan gelmiş geçmiş en iyi replik</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">babala tv yayınındaki aktrollün ifşa edilmesi</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">sığınmacıların kapıkule sınır kapısına akın etmesi</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">kendine muhabir'in vicdanlı bir insanla röportajı</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">bir senede on üç milyon insanı sınır dışı etmek</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">hollandada yalnız bulunan depremzede çocuk</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">iş hayatında çalışmaktan tiksindiren şeyler</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">2008 yılına ait çok ilginç 2023 araştırması</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="#">almanya'da oy kullanmak için sıra bekleyen afgan</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6">
@@ -128,7 +139,7 @@
                                 </div>
                                 <div class="btn-toolbar justify-content-between mt-2">
                                     <div class="btn-group">
-                                        <button type="submit" class="btn btn-primary btnPost">Gönder</button>
+                                        <button type="submit" class="btn btn-primary btnPost">Paylaş</button>
                                     </div>
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn btn-primary dropdown-toggle"
@@ -161,14 +172,84 @@
                         </div>
                         <!-- Post Add -->
                         <!-- Post -->
-                        
+                    <div class="card mt-5 post">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center postUser">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="me-2 user-img-box">
+                                        <img class="user-img" src="/img/bimage.jpeg" alt="">
+                                    </div>
+                                    <div class="ms-2">
+                                        <div class="h5 m-0">@Heisenberg</div>
+                                        <div class="text-muted">Fatih Soyaltun</div>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Kaydet</a></li>
+                                        <li><a class="dropdown-item" href="#">Raporla</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-muted mb-2 postDate"><i class="fa-regular fa-clock me-1"></i>10 min ago</div>
+                            <a class="card-link" href="#">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adip.</h5>
+                            </a>
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/img/bimage.jpeg" class="d-block w-100" alt="post-image">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/grunge-paint-background.jpg" class="d-block w-100" alt="post-image">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/img/logo (2).png" class="d-block w-100" alt="post-image">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <i class="fa-solid fa-circle-arrow-left" aria-hidden="true"></i>
+                                    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <i class="fa-solid fa-circle-arrow-right" aria-hidden="true"></i>
+                                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa
+                                praesentium esse magnam nemo dolor
+                                sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+                            </p>
+                            <div class="card-footer d-flex gap-3">
+                                <div class="like">
+                                    <a href="#" class="card-link fs-4"><i class="fa-regular fa-heart"></i></a>
+                                    <span class="likeText">beğen</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="#" class="card-link fs-4"><i class="fa-regular fa-comment"></i></a>
+                                </div>
+                                <div class="share">
+                                    <a href="#" class="card-link fs-4"><i class="fa-regular fa-share-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                         <!-- Post -->
                     </div>
                 </div>
-                <div class="col-md-3"></div>
+                <div class="col-md-3 d-none d-lg-block">
+                    
+                </div>
             </div>
-    </div>
-    </section>
+        </section>
     </div>
     <!-- Bootstrap Cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

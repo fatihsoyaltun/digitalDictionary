@@ -14,7 +14,7 @@ html
 .main-wrapper
     background-color: #ECECEC
     .navbar
-        background-color: #13005A
+        background-color: $colordarkgray
         .navbar-toggler
             padding: .5rem
         .navbar-brand
@@ -22,6 +22,7 @@ html
             img
                 width: 50px
         form
+            min-width: 300px
             .form-control
                 border-radius: .5rem
                 background-color: transparent
@@ -32,15 +33,26 @@ html
             button
                 color: #fff
                 &:hover
-                    background-color: #1C82AD
+                    background-color: $orangecolor
     .gedf-wrapper
         padding-top: 4.5rem
         .titlesHero
             .titlesHeroNav
+                .dropdown
+                    .dropdown-toggle
+                        border: none
+                        &::after
+                            display: none
+                    .dropdown-menu
+                        .dropdown-item
+                            &:hover
+                                background-color: $orangecolorlight
+                                color: #fff
                 .nav-item
                     transition: all .5s ease-in-out
+                    text-transform: uppercase
                     &:hover
-                        background: #1C82AD
+                        background: $orangecolorlight
                     &:hover .nav-link
                         color: #fff !important
                     .nav-link
@@ -55,8 +67,10 @@ html
             .nav-tabs
                 .nav-link
                     color: #000
+                    &:hover
+                        background-color: $orangecolorlight
                 .nav-link.active
-                    background-color: #1C82AD
+                    background-color: $orangecolor
                     color: #fff
             .card-body
                 .uploadBox
@@ -68,7 +82,7 @@ html
                         text-transform: uppercase
                         color: #fff
                         text-align: center
-                        background: #1C82AD
+                        background: $orangecolor
                         letter-spacing: 1.5px
                         user-select: none
                         cursor: pointer
@@ -82,20 +96,81 @@ html
                             transform: scale(.95)
                 .btn-toolbar 
                     .btnPost
-                        background-color: #1C82AD
+                        background-color: $orangecolor
                         border: none
                         transition: all .5s ease
+                        box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35)
                         &:active
                             transform: scale(.9)
                     .dropdown-toggle
-                        background-color: #1C82AD
+                        background-color: $orangecolor
                         border: none
+                        box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35)
+                        &::after
+                            display: none
                     .dropdown-menu
                         .dropdown-item
                             &:hover
-                                background-color: #1C82AD
+                                background-color: $orangecolorlight
                                 color: #fff
-
+        .post
+            .postUser
+                .user-img-box
+                    width: 45px
+                    height: 45px
+                    object-fit: cover
+                    border-radius: 50%
+                    img
+                        width: 100%
+                        height: 100%
+                        max-width: 100%
+                        border-radius: 50%
+                        border: 1px solid $orangecolor
+                .dropdown
+                    .dropdown-toggle
+                        background-color: $orangecolor
+                        border: none
+                        box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35)
+                        &::after
+                            display: none
+                        i
+                            color: $colordarkgray
+                    .dropdown-menu
+                        inset: 0px auto auto -125px !important
+                        .dropdown-item
+                            &:hover
+                                background-color: $orangecolorlight
+                                color: #fff
+            .postDate
+                font-size: .8rem
+            .card-link
+                color: $orangecolor
+            .carousel
+                .carousel-inner
+                    .carousel-item
+                        width: 100%
+                        height: 400px
+                        img
+                            max-width: 100%
+                .carousel-control-prev
+                    &:hover i
+                        color: $orangecolor
+                    i
+                        color: $colordarkgray
+                        font-size: 30px
+                .carousel-control-next
+                    &:hover i
+                        color: $orangecolor
+                    i
+                        color: $colordarkgray
+                        font-size: 30px
+            .card-footer
+                .like
+                    position: relative
+                    .likeText
+                        font-size: 10px
+                        position: absolute
+                        top: .5rem
 //* login-register css
 .log-reg
     background: #007bff
@@ -278,9 +353,10 @@ html
         88%
             transform: rotate(-1deg)
 
-    //! responsive css
-    @media screen and ( max-width: 576px )
-        .navbar
-            form
-                width: 100% !important
+//! responsive css
+@media screen and ( max-width: 576px )
+    .navbar
+        form
+            width: 100% !important
+            margin-top: 1rem
 

@@ -51,13 +51,50 @@ html
                 background-color: #ECECEC
                 &:hover
                     background-color: #E9E8E8
-        .post
+        .postAdd
             .nav-tabs
                 .nav-link
                     color: #000
                 .nav-link.active
                     background-color: #1C82AD
                     color: #fff
+            .card-body
+                .uploadBox
+                    width: 10%
+                    input[type="file"]
+                        display: none
+                    label
+                        display: inline-block
+                        text-transform: uppercase
+                        color: #fff
+                        text-align: center
+                        background: #1C82AD
+                        letter-spacing: 1.5px
+                        user-select: none
+                        cursor: pointer
+                        box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35)
+                        border-radius: 3px
+                        transition: all .5s ease
+                        i
+                            font-size: 20px
+                            padding: 10px
+                        &:active
+                            transform: scale(.95)
+                .btn-toolbar 
+                    .btnPost
+                        background-color: #1C82AD
+                        border: none
+                        transition: all .5s ease
+                        &:active
+                            transform: scale(.9)
+                    .dropdown-toggle
+                        background-color: #1C82AD
+                        border: none
+                    .dropdown-menu
+                        .dropdown-item
+                            &:hover
+                                background-color: #1C82AD
+                                color: #fff
 
 //* login-register css
 .log-reg
@@ -91,7 +128,6 @@ html
                 border-color: #1C82AD
         .changeover
             color: #1A120B
-            //test
 
 // profile.html ayhancss
 .profile-card

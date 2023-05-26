@@ -37,7 +37,6 @@ html body {
   background-color: #1C82AD;
 }
 .main-wrapper .gedf-wrapper {
-
   padding-top: 4.5rem;
 }
 .main-wrapper .gedf-wrapper .titlesHero .titlesHeroNav .nav-item {
@@ -112,40 +111,4 @@ html body {
   .navbar form {
     width: 100% !important;
   }
-=======
-  margin-top: 7.5rem;
-}
-
-.head1 {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.head2 {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 0;
-}
-
-.mytext {
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.mytextlight {
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 0;
-}
-
-.mytextsmall {
-  font-size: 12px;
-  font-weight: 300;
-  margin-bottom: 0;
-}
-
-.gradient-custom {
-  background: #f6d365;
-  background: linear-gradient(to right bottom, rgb(246, 211, 101), rgb(253, 160, 133));
-
 }/*# sourceMappingURL=style.css.map */

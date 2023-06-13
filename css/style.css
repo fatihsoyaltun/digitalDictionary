@@ -1,3 +1,20 @@
+hr {
+  color: #ff7f00;
+}
+
+.btn-danger {
+  background: linear-gradient(150deg, rgb(255, 163, 72) 49%, rgb(255, 127, 0) 100%);
+  color: black;
+  font-size: 14px;
+  border: #2f3441;
+  font-weight: 500;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 30px;
+}
+
 html {
   overflow-x: hidden;
   box-sizing: border-box;
@@ -157,41 +174,60 @@ html body {
 .profile-card ul li {
   list-style-type: none;
 }
-.profile-card .card {
+.profile-card .myCard {
   position: relative;
-  width: 256px;
-  background: rgb(47, 52, 65);
-  background: linear-gradient(150deg, rgb(47, 52, 65) 49%, rgb(29, 31, 34) 100%);
-  padding: 1.25rem 2rem 3rem;
-  border: gray;
+  width: 100%;
+  background: linear-gradient(150deg, rgb(47, 52, 65) 49%, rgb(16, 16, 16) 100%);
+  padding: 1.25rem 2rem 1.2rem;
+  border: 2px solid #ff7f00 !important;
   border-radius: 1.5rem;
   text-align: center;
   box-shadow: rgba(255, 128, 0, 0.1411764706) 0px 4px 12px;
 }
-.profile-card .card .card__border {
+.profile-card .myCard .card-about .card-about-bottom a {
+  position: relative;
+}
+.profile-card .myCard .card-about .card-about-bottom a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background: linear-gradient(150deg, rgb(255, 163, 72) 49%, rgb(255, 127, 0) 100%);
+  bottom: -4px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.profile-card .myCard .card-about .card-about-bottom a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.profile-card .myCard .card__border {
   width: 110px;
   height: 110px;
-  border: 2px solid black;
+  border: 2px solid #ff7f00;
   border-radius: 50%;
   display: grid;
   place-items: center;
   margin: 0 auto 0.75rem;
 }
-.profile-card .card .card__border .card__img {
+.profile-card .myCard .card__border .card__img {
   width: 96px;
   border-radius: 50%;
 }
-.profile-card .card .card__name {
+.profile-card .myCard .card__name {
   color: white;
   font-size: 14px;
   font-weight: 500;
 }
-.profile-card .card .card__profession {
+.profile-card .myCard .card__profession {
   color: white;
   font-size: 14px;
   font-weight: 500;
 }
-.profile-card .card .card__social {
+.profile-card .myCard .card__social {
   width: 200px;
   background: rgb(255, 163, 72);
   background: linear-gradient(150deg, rgb(255, 163, 72) 49%, rgb(255, 127, 0) 100%);
@@ -208,13 +244,13 @@ html body {
   overflow: hidden;
   transform-origin: 18px 17px;
 }
-.profile-card .card .card__social .card__social-control {
+.profile-card .myCard .card__social .card__social-control {
   position: relative;
   transform-origin: 18px 18px;
   transition: transform 0.45s ease;
   transform: rotate(0);
 }
-.profile-card .card .card__social .card__social-control .card__social-toggle {
+.profile-card .myCard .card__social .card__social-control .card__social-toggle {
   display: inline-flex;
   background-color: #2f3441;
   color: #ffa348;
@@ -225,7 +261,7 @@ html body {
   position: relative;
   z-index: 10;
 }
-.profile-card .card .card__social .card__social-control .card__social-text {
+.profile-card .myCard .card__social .card__social-control .card__social-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,33 +269,35 @@ html body {
   color: #2f3441;
   font-size: 14px;
   font-weight: 500;
+  width: 100%;
+  padding-top: 0.4rem;
 }
-.profile-card .card .card__social .card__social-control .card__social-list {
+.profile-card .myCard .card__social .card__social-control .card__social-list {
   display: inline-flex;
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
   transform: rotate(135deg);
   transform-origin: 18px 17px;
 }
-.profile-card .card .card__social .card__social-control .card__social-list .card__social-link {
+.profile-card .myCard .card__social .card__social-control .card__social-list .card__social-link {
   display: inline-flex;
   color: #2f3441;
   font-size: 1.25rem;
   padding: 6px;
   border-radius: 50%;
 }
-.profile-card .card .card__social .card__social-control .card__social-text,
-.profile-card .card .card__social .card__social-control .card__social-list {
+.profile-card .myCard .card__social .card__social-control .card__social-text,
+.profile-card .myCard .card__social .card__social-control .card__social-list {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   padding-left: 3.1rem;
 }
-.profile-card .card .card__social .card__social-control .card__social-text {
+.profile-card .myCard .card__social .card__social-control .card__social-text {
   top: 0;
 }
-.profile-card .card .animation .card__social-control {
+.profile-card .myCard .animation .card__social-control {
   transform: rotate(-135deg);
 }
 .profile-card .card__social.animation {
@@ -280,7 +318,6 @@ html body {
   }
 }
 
-/* Down animation */
 .card__social.down-animation {
   animation: down-animation 1s ease-in-out forwards;
 }
@@ -295,8 +332,9 @@ html body {
     transform: rotate(-1deg);
   }
 }
+
 @media screen and (max-width: 576px) {
-  .card__social.down-animation .navbar form {
+  .follow-up .navbar form {
     width: 100% !important;
   }
 }/*# sourceMappingURL=style.css.map */
